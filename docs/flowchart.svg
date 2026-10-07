@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1000" width="1240" height="1000" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','Segoe UI',sans-serif">
+<title>Automatic Plant Growing System - Flow Chart</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2430"/></marker></defs>
+<rect width="1240" height="1000" fill="#ffffff"/>
+<text x="620.0" y="36.0" font-size="22" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">센서 기반 자동 식물 재배 시스템 · Flow Chart</text>
+<rect x="540" y="68" width="160" height="48" rx="24" fill="#2b3240" stroke="#2b3240" stroke-width="2"/>
+<text x="620" y="92.0" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="central">START</text>
+<path d="M620,116 V146" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<rect x="490" y="146" width="260" height="54" rx="10" fill="#f4f5f7" stroke="#5b6270" stroke-width="2"/>
+<text x="620.0" y="173.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">전원 ON (토글 스위치)</text>
+<path d="M620,200 V236" fill="none" stroke="#1f2430" stroke-width="2"/>
+<path d="M196,236 H1066" fill="none" stroke="#1f2430" stroke-width="2"/>
+<circle cx="620" cy="236" r="4" fill="#1f2430"/>
+<path d="M196,236 V270" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="204" y="254" font-size="13" font-weight="bold" fill="#2f6fd1">토양 습도</text>
+<rect x="81" y="270" width="230" height="62" rx="10" fill="#e8f1fd" stroke="#2f6fd1" stroke-width="2"/>
+<text x="196.0" y="290.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">토양 습도 센서</text>
+<text x="196.0" y="311.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">출력 전압 측정</text>
+<path d="M196,332 V366" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<rect x="81" y="366" width="230" height="58" rx="10" fill="#e9f7ee" stroke="#2c9a55" stroke-width="2"/>
+<text x="196.0" y="395.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">비반전 증폭 ×2</text>
+<path d="M196,424 V462" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M196,462.0 L270.0,530 L196,598.0 L122.0,530 Z" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="196" y="509.8" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">증폭 전압</text>
+<text x="196" y="530.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">> 2.7 V ?</text>
+<text x="196" y="550.2" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">(건조)</text>
+<path d="M122,530 H118 V630" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M270,530 H274 V630" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="112" y="518" font-size="13" fill="#1f2430" text-anchor="end" dominant-baseline="central">YES</text>
+<text x="280" y="518" font-size="13" fill="#1f2430" text-anchor="start" dominant-baseline="central">NO</text>
+<rect x="58" y="630" width="120" height="56" rx="10" fill="#e9f7ee" stroke="#2c9a55" stroke-width="2"/>
+<text x="118.0" y="658.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">펌프 ON</text>
+<rect x="214" y="630" width="120" height="56" rx="10" fill="#f4f5f7" stroke="#5b6270" stroke-width="2"/>
+<text x="274.0" y="658.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">펌프 OFF</text>
+<path d="M118,686 V716 H274 V686" fill="none" stroke="#1f2430" stroke-width="2"/>
+<circle cx="196" cy="716" r="4" fill="#1f2430"/>
+<path d="M196,716 V770" fill="none" stroke="#1f2430" stroke-width="2"/>
+<path d="M486,236 V270" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="494" y="254" font-size="13" font-weight="bold" fill="#2f6fd1">수위</text>
+<rect x="371" y="270" width="230" height="62" rx="10" fill="#e8f1fd" stroke="#2f6fd1" stroke-width="2"/>
+<text x="486.0" y="290.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">수위 센서</text>
+<text x="486.0" y="311.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">출력 전압 측정</text>
+<path d="M486,332 V366" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<rect x="371" y="366" width="230" height="58" rx="10" fill="#e9f7ee" stroke="#2c9a55" stroke-width="2"/>
+<text x="486.0" y="395.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">비반전 증폭 ×2</text>
+<path d="M486,424 V462" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M486,462.0 L560.0,530 L486,598.0 L412.0,530 Z" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="486" y="509.8" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">증폭 전압</text>
+<text x="486" y="530.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">&lt; 3.0 V ?</text>
+<text x="486" y="550.2" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">(물 부족)</text>
+<path d="M412,530 H408 V630" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M560,530 H564 V630" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="402" y="518" font-size="13" fill="#1f2430" text-anchor="end" dominant-baseline="central">YES</text>
+<text x="570" y="518" font-size="13" fill="#1f2430" text-anchor="start" dominant-baseline="central">NO</text>
+<rect x="348" y="630" width="120" height="56" rx="10" fill="#fdeaea" stroke="#cf3b3b" stroke-width="2"/>
+<text x="408.0" y="658.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">청색 LED ON</text>
+<rect x="504" y="630" width="120" height="56" rx="10" fill="#f4f5f7" stroke="#5b6270" stroke-width="2"/>
+<text x="564.0" y="658.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">LED OFF</text>
+<path d="M408,686 V716 H564 V686" fill="none" stroke="#1f2430" stroke-width="2"/>
+<circle cx="486" cy="716" r="4" fill="#1f2430"/>
+<path d="M486,716 V770" fill="none" stroke="#1f2430" stroke-width="2"/>
+<path d="M776,236 V270" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="784" y="254" font-size="13" font-weight="bold" fill="#2f6fd1">조도</text>
+<rect x="661" y="270" width="230" height="62" rx="10" fill="#e8f1fd" stroke="#2f6fd1" stroke-width="2"/>
+<text x="776.0" y="290.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">조도 센서 (CdS)</text>
+<text x="776.0" y="311.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">분압 전압 측정</text>
+<path d="M776,332 V366" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<rect x="661" y="366" width="230" height="62" rx="10" fill="#e9f7ee" stroke="#2c9a55" stroke-width="2"/>
+<text x="776.0" y="386.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">증폭 없이</text>
+<text x="776.0" y="407.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">비교기 입력</text>
+<path d="M776,428 V462" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M776,462.0 L850.0,530 L776,598.0 L702.0,530 Z" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="776" y="509.8" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">센서 전압</text>
+<text x="776" y="530.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">> 1.5 V ?</text>
+<text x="776" y="550.2" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">(밝음)</text>
+<path d="M702,530 H698 V630" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M850,530 H854 V630" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="692" y="518" font-size="13" fill="#1f2430" text-anchor="end" dominant-baseline="central">YES</text>
+<text x="860" y="518" font-size="13" fill="#1f2430" text-anchor="start" dominant-baseline="central">NO</text>
+<rect x="638" y="630" width="120" height="56" rx="10" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="698.0" y="658.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">조명 LED ON</text>
+<rect x="794" y="630" width="120" height="56" rx="10" fill="#f4f5f7" stroke="#5b6270" stroke-width="2"/>
+<text x="854.0" y="658.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">조명 OFF</text>
+<path d="M698,686 V716 H854 V686" fill="none" stroke="#1f2430" stroke-width="2"/>
+<circle cx="776" cy="716" r="4" fill="#1f2430"/>
+<path d="M776,716 V770" fill="none" stroke="#1f2430" stroke-width="2"/>
+<path d="M1066,236 V270" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="1074" y="254" font-size="13" font-weight="bold" fill="#2f6fd1">환기</text>
+<rect x="951" y="270" width="230" height="62" rx="10" fill="#e8f1fd" stroke="#2f6fd1" stroke-width="2"/>
+<text x="1066.0" y="290.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">NE555</text>
+<text x="1066.0" y="311.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">커패시터 충·방전</text>
+<path d="M1066,332 V366" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<rect x="951" y="366" width="230" height="62" rx="10" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="1066.0" y="386.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">2/3 · 1/3 Vcc</text>
+<text x="1066.0" y="407.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">비교 → 플립플롭</text>
+<path d="M1066,428 V462" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1066,462.0 L1140.0,530 L1066,598.0 L992.0,530 Z" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="1066" y="519.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">출력 HIGH ?</text>
+<text x="1066" y="540.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">(충전 구간)</text>
+<path d="M992,530 H988 V630" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1140,530 H1144 V630" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="982" y="518" font-size="13" fill="#1f2430" text-anchor="end" dominant-baseline="central">YES</text>
+<text x="1150" y="518" font-size="13" fill="#1f2430" text-anchor="start" dominant-baseline="central">NO</text>
+<rect x="928" y="630" width="120" height="56" rx="10" fill="#f3ecfb" stroke="#7d4cc2" stroke-width="2"/>
+<text x="988.0" y="658.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">팬 ON</text>
+<rect x="1084" y="630" width="120" height="56" rx="10" fill="#f4f5f7" stroke="#5b6270" stroke-width="2"/>
+<text x="1144.0" y="658.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">팬 OFF</text>
+<path d="M988,686 V716 H1144 V686" fill="none" stroke="#1f2430" stroke-width="2"/>
+<circle cx="1066" cy="716" r="4" fill="#1f2430"/>
+<path d="M1066,716 V770" fill="none" stroke="#1f2430" stroke-width="2"/>
+<path d="M196,770 H1066" fill="none" stroke="#1f2430" stroke-width="2"/>
+<circle cx="620" cy="770" r="4" fill="#1f2430"/>
+<path d="M620,770 V806" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M620,806.0 L740.0,846 L620,886.0 L500.0,846 Z" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="620" y="846.0" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">전원 유지 중?</text>
+<path d="M500,846 H22 V236 H196" fill="none" stroke="#1f2430" stroke-width="2"/>
+<text x="490" y="832" font-size="13" fill="#1f2430" text-anchor="end" dominant-baseline="central">YES · 반복</text>
+<path d="M620,886 V906" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="630" y="896" font-size="13" fill="#1f2430" text-anchor="start" dominant-baseline="central">NO</text>
+<rect x="540" y="906" width="160" height="48" rx="24" fill="#2b3240" stroke="#2b3240" stroke-width="2"/>
+<text x="620" y="930.0" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="central">END</text>
+</svg>

@@ -25,15 +25,13 @@ Multisim 시뮬레이션 → 브레드보드 실험 → PCB 제작 → 3D 프린
 
 ## Block Diagram
 
-<p align="center"><img src="docs/block_diagram.png" width="640" alt="Block Diagram"></p>
+<p align="center"><img src="docs/block_diagram.svg" width="820" alt="Block Diagram"></p>
 
 ## Flow Chart
 
-| 조도 센서부 | 토양 습도 센서부 |
-|:---:|:---:|
-| <img src="docs/flow_light.png" width="320"> | <img src="docs/flow_soil.png" width="320"> |
-| **수위 센서부** | **팬 모터 제어부** |
-| <img src="docs/flow_water.png" width="320"> | <img src="docs/flow_fan.png" width="320"> |
+네 개 블록은 MCU 없이 각자의 아날로그 회로로 **동시에, 독립적으로** 동작합니다.
+
+<p align="center"><img src="docs/flowchart.svg" width="860" alt="Flow Chart"></p>
 
 ## 회로
 
@@ -62,6 +60,12 @@ Multisim 시뮬레이션 → 브레드보드 실험 → PCB 제작 → 3D 프린
 ## 3D 모델링
 
 Fusion 360으로 외관을 설계하고 3D 프린팅했습니다. STL 파일은 GitHub에서 클릭하면 3D로 바로 볼 수 있어요.
+
+<p align="center"><img src="images/assembly_render.png" width="420" alt="전체 조립 모델"></p>
+
+**전체 조립 모델**: [`assembly.stl`](models/assembly.stl) (260 × 131 × 257 mm)
+
+부품별 파일:
 
 | 파일 | 부품 | 크기 (mm) |
 |---|---|---|

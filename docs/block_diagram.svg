@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 720" width="1120" height="720" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','Segoe UI',sans-serif">
+<title>Automatic Plant Growing System - Block Diagram</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2430"/></marker></defs>
+<rect width="1120" height="720" fill="#ffffff"/>
+<text x="560.0" y="36.0" font-size="22" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">센서 기반 자동 식물 재배 시스템 · Block Diagram</text>
+<text x="125.0" y="92.0" font-size="14" font-weight="bold" fill="#5b6270" text-anchor="middle" dominant-baseline="central">입력 (센서 · 타이머)</text>
+<text x="345.0" y="92.0" font-size="14" font-weight="bold" fill="#5b6270" text-anchor="middle" dominant-baseline="central">신호 증폭</text>
+<text x="565.0" y="92.0" font-size="14" font-weight="bold" fill="#5b6270" text-anchor="middle" dominant-baseline="central">비교 · 판단</text>
+<text x="785.0" y="92.0" font-size="14" font-weight="bold" fill="#5b6270" text-anchor="middle" dominant-baseline="central">구동</text>
+<text x="1005.0" y="92.0" font-size="14" font-weight="bold" fill="#5b6270" text-anchor="middle" dominant-baseline="central">출력</text>
+<line x1="40" y1="110" x2="1090" y2="110" stroke="#d5d8de" stroke-width="1.5"/>
+<rect x="40" y="140" width="170" height="84" rx="10" fill="#e8f1fd" stroke="#2f6fd1" stroke-width="2"/>
+<text x="125.0" y="171.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">YL-69</text>
+<text x="125.0" y="192.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">토양 습도 센서</text>
+<rect x="260" y="140" width="170" height="84" rx="10" fill="#e9f7ee" stroke="#2c9a55" stroke-width="2"/>
+<text x="345.0" y="171.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">LM741</text>
+<text x="345.0" y="192.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">비반전 증폭 ×2</text>
+<rect x="480" y="140" width="170" height="84" rx="10" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="565.0" y="171.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">LM741 비교기</text>
+<text x="565.0" y="192.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">Vref 2.7 V · 건조 시 HIGH</text>
+<rect x="700" y="140" width="170" height="84" rx="10" fill="#f3ecfb" stroke="#7d4cc2" stroke-width="2"/>
+<text x="785.0" y="171.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">IRF520</text>
+<text x="785.0" y="192.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">MOSFET 모듈</text>
+<rect x="920" y="140" width="170" height="84" rx="10" fill="#fdeaea" stroke="#cf3b3b" stroke-width="2"/>
+<text x="1005.0" y="171.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">워터 펌프</text>
+<text x="1005.0" y="192.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">자동 급수</text>
+<path d="M210,182.0 H260" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M430,182.0 H480" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M650,182.0 H700" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M870,182.0 H920" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<rect x="40" y="270" width="170" height="84" rx="10" fill="#e8f1fd" stroke="#2f6fd1" stroke-width="2"/>
+<text x="125.0" y="301.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">P5508</text>
+<text x="125.0" y="322.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">수위 센서</text>
+<rect x="260" y="270" width="170" height="84" rx="10" fill="#e9f7ee" stroke="#2c9a55" stroke-width="2"/>
+<text x="345.0" y="301.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">LM741</text>
+<text x="345.0" y="322.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">비반전 증폭 ×2</text>
+<rect x="480" y="270" width="170" height="84" rx="10" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="565.0" y="301.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">LM741 비교기</text>
+<text x="565.0" y="322.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">Vref 3.0 V · 부족 시 HIGH</text>
+<rect x="920" y="270" width="170" height="84" rx="10" fill="#fdeaea" stroke="#cf3b3b" stroke-width="2"/>
+<text x="1005.0" y="301.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">청색 LED</text>
+<text x="1005.0" y="322.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">물 부족 알림</text>
+<path d="M210,312.0 H260" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M430,312.0 H480" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M650,312.0 H920" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="785.0" y="298.0" font-size="13" fill="#5b6270" text-anchor="middle" dominant-baseline="central">330 Ω 직결</text>
+<rect x="40" y="400" width="170" height="84" rx="10" fill="#e8f1fd" stroke="#2f6fd1" stroke-width="2"/>
+<text x="125.0" y="431.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">GL5528</text>
+<text x="125.0" y="452.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">조도 센서 (CdS 분압)</text>
+<rect x="480" y="400" width="170" height="84" rx="10" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="565.0" y="431.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">LM741 비교기</text>
+<text x="565.0" y="452.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">Vref 1.5 V · 밝으면 HIGH</text>
+<rect x="920" y="400" width="170" height="84" rx="10" fill="#fdeaea" stroke="#cf3b3b" stroke-width="2"/>
+<text x="1005.0" y="431.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">RGB LED ×4</text>
+<text x="1005.0" y="452.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">보라색 식물 조명</text>
+<path d="M210,442.0 H480" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="345.0" y="428.0" font-size="13" fill="#5b6270" text-anchor="middle" dominant-baseline="central">분압 전압 직접 입력</text>
+<path d="M650,442.0 H920" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="785.0" y="428.0" font-size="13" fill="#5b6270" text-anchor="middle" dominant-baseline="central">330 Ω 직결</text>
+<rect x="40" y="530" width="170" height="84" rx="10" fill="#e8f1fd" stroke="#2f6fd1" stroke-width="2"/>
+<text x="125.0" y="561.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">NE555</text>
+<text x="125.0" y="582.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">비안정 타이머</text>
+<rect x="480" y="530" width="170" height="84" rx="10" fill="#fdf1e3" stroke="#d0811f" stroke-width="2"/>
+<text x="565.0" y="561.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">주기 구형파</text>
+<text x="565.0" y="582.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">T_H 7.6 s / T_L 6.9 s</text>
+<rect x="700" y="530" width="170" height="84" rx="10" fill="#f3ecfb" stroke="#7d4cc2" stroke-width="2"/>
+<text x="785.0" y="561.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">IRF520</text>
+<text x="785.0" y="582.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">MOSFET 모듈</text>
+<rect x="920" y="530" width="170" height="84" rx="10" fill="#fdeaea" stroke="#cf3b3b" stroke-width="2"/>
+<text x="1005.0" y="561.9" font-size="16" font-weight="bold" fill="#1f2430" text-anchor="middle" dominant-baseline="central">팬 모터 ×2</text>
+<text x="1005.0" y="582.1" font-size="13" font-weight="normal" fill="#5b6270" text-anchor="middle" dominant-baseline="central">주기 환기</text>
+<path d="M210,572.0 H480" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<text x="345.0" y="558.0" font-size="13" fill="#5b6270" text-anchor="middle" dominant-baseline="central">3번 핀 출력</text>
+<path d="M650,572.0 H700" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<path d="M870,572.0 H920" fill="none" stroke="#1f2430" stroke-width="2" marker-end="url(#a)"/>
+<rect x="40" y="650" width="1050" height="44" rx="10" fill="#f4f5f7" stroke="#5b6270" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="565" y="672.0" font-size="14" font-weight="bold" fill="#5b6270" text-anchor="middle" dominant-baseline="central">전원  ·  6 V 배터리 ×3 (±6 V)  ·  MTS-203 토글 스위치  →  전 블록 공급</text>
+</svg>
