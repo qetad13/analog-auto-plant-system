@@ -145,7 +145,11 @@ NE555 주기: 이론 T<sub>H</sub> 7.623 s / T<sub>L</sub> 6.93 s → 시뮬레�
 |:---:|:---:|
 | <img src="images/scope/amplifier_x2.png" width="360"> | <img src="images/scope/ne555_period.png" width="360"> |
 
-동작 영상: [`videos/final_demo.mp4`](videos/final_demo.mp4)
+### 동작 영상
+
+<a href="videos/final_demo.mp4"><img src="images/final_demo_thumb.jpg" width="320" alt="최종 동작 영상"></a>
+
+▶ [`videos/final_demo.mp4`](videos/final_demo.mp4) — 완성품의 최종 동작 모습
 
 ---
 
@@ -202,5 +206,6 @@ NE555 주기: 이론 T<sub>H</sub> 7.623 s / T<sub>L</sub> 6.93 s → 시뮬레�
 `NI Multisim` · `Fusion 360` `3D 프린팅`
 
 ## 라이선스 / 출처
+- [MIT License](LICENSE)
 - 회로 및 기구 설계는 팀에서 직접 작성했으며, 블록도·플로우차트는 결과보고서를 바탕으로 다시 그렸습니다.
 - 참고: [YL-69 Soil Moisture Sensor Guide](https://randomnerdtutorials.com/guide-for-soil-moisture-sensor-yl-69-or-hl-69-with-the-arduino/) · [LM741 Datasheet](https://www.alldatasheet.com/html-pdf/840177/TI1/LM741/226/4/LM741.html) · [555 Astable Mode](https://www.electronics-tutorials.ws/waveforms/555_oscillator.html) · [GL5528 Datasheet](https://www.alldatasheet.com/html-pdf/1131893/ETC2/GL5528/227/2/GL5528.html)
